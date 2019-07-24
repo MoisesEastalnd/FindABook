@@ -1,0 +1,27 @@
+{
+  "name": "findabook",
+  "version": "1.0.0",
+  "description": "findabook",
+  "main": "server.js",
+  "scripts": {
+    "start": " node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoisesEastalnd/findabook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoisesEastalnd/findabook/issues"
+  },
+  "homepage": "https://github.com/MoisesEastalnd/findabook#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.6",
+    "node": "^12.7.0",
+    "nodemon": "^1.19.1"
+  }
+}
