@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/MoisesEastalnd/findabook#readme",
   "dependencies": {
+    "config": "^3.2.2",
     "express": "^4.17.1",
     "mongoose": "^5.6.6",
     "node": "^12.7.0",

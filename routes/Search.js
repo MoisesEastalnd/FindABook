@@ -22,5 +22,5 @@ router.get ("/", (req, res)=> {
   
     
 
-    module.exports = router;
+   return module.exports = router;
     

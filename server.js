@@ -1,12 +1,17 @@
 const express = require("express");
+const connectDB = require("./config/db");
 const app = express();
 
-app.use(express.urlencoded({ extend: true}));
-app.use(express.json());
+
+//Connect to Database
+connectDB();
+
+//app.use(express.urlencoded({ extend: true}));
+//app.use(express.json());
 //Serve static assets (for heroku)
-if (process.env.NODE_ENV ==="production") {
-    app.use(express.static("client/build"));
-}
+//if (process.env.NODE_ENV ==="production") {
+    //app.use(express.static("client/build"));
+//}
 
 
 //Defined Routes
