@@ -6,18 +6,15 @@ const db = config.get("mongoURI");
 const connectDB = async() => {
    try{
      await 
-     mongoose.connect(db, {"mongodb://localhost:27017/test",
-         userNewUrlParser: true,
-          userCreateIndex: true,
-          useFindAndModify: false
-     })
-
+     mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1/reactreadinglist");
+         
     console.log ("MongoDB Connected...");
      
      } catch(err) {
          console.error(err.message);
         process.exit(1);
 
-};
+    };
+ }
 
-   return module.exports = connectDB;
+      module.exports = connectDB;
